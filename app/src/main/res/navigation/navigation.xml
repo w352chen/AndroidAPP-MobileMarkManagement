@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/addFragment" android:name="com.example.a4_basic.AddFragment" android:label="fragment_add"
+              tools:layout="@layout/fragment_add">
+        <action android:id="@+id/action_addFragment_to_mainFragment" app:destination="@id/mainFragment"/>
+        <action android:id="@+id/action_addFragment_pop" app:popUpTo="@id/addFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:id="@+id/mainFragment" android:name="com.example.a4_basic.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_addFragment" app:destination="@id/addFragment"/>
+        <action android:id="@+id/action_mainFragment_to_editFragment" app:destination="@id/editFragment"/>
+    </fragment>
+    <fragment android:id="@+id/editFragment" android:name="com.example.a4_basic.EditFragment"
+              android:label="EditFragment">
+        <action android:id="@+id/action_editFragment_pop" app:popUpTo="@id/editFragment" app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,62 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainFragment" android:padding="8dp">
+
+
+    <TextView
+            android:text="@string/default_course_code"
+            android:layout_width="0dp"
+            android:layout_height="24dp" android:id="@+id/textView_couse_code"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="textStart"/>
+    <TextView
+            android:text="@string/default_course_mark"
+            android:layout_width="0dp"
+            android:layout_height="24dp" android:id="@+id/textView_mark"
+            app:layout_constraintTop_toTopOf="@+id/textView_couse_code"
+            app:layout_constraintStart_toEndOf="@+id/textView_couse_code"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_couse_code" android:layout_marginStart="16dp"
+            android:gravity="center" android:textAlignment="textStart"/>
+    <TextView
+            android:text="@string/default_course_term"
+            android:layout_width="0dp"
+            android:layout_height="24dp" android:id="@+id/textView_course_term"
+            app:layout_constraintTop_toTopOf="@+id/textView_mark"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_mark"
+            app:layout_constraintStart_toEndOf="@+id/textView_mark" android:layout_marginStart="16dp"
+            android:gravity="center" android:textAlignment="textStart"/>
+    <TextView
+            android:text="@string/default_course_description"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content" android:id="@+id/textView_course_description"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_couse_code"
+            android:layout_marginTop="8dp" android:gravity="center" android:textAlignment="textStart"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/e9336eb2_c840_4649_a91f_4463b7d8a99f"
+            android:background="@android:color/transparent"
+            android:id="@+id/imageButton_edit"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton_delete"
+            app:layout_constraintTop_toTopOf="@+id/textView_course_term"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_course_description" android:layout_marginEnd="8dp"
+    />
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" app:srcCompat="@drawable/delete"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageButton_delete"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@+id/imageButton_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton_edit"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

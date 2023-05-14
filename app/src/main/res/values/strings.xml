@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">a4-basic</string>
+    <string name="default_course_code">Course Code</string>
+    <string name="default_course_mark">Mark</string>
+    <string name="default_course_term">Term</string>
+    <string name="default_course_description">Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="withdrawn">WD\'ed?</string>
+    <string name="cancel">CANCEL</string>
+    <string name="create">CREATE</string>
+    <string name="alert_title_course_data">Course Data Error</string>
+    <string name="submit">SUBMIT</string>
+</resources>
